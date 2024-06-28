@@ -1,0 +1,25 @@
+subscription {
+  Solana {
+    BalanceUpdates(
+      where: {BalanceUpdate: {Account: {Address: {is: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"}}}}
+    ) {
+      BalanceUpdate {
+        Account {
+          Address
+        }
+        Amount
+        Currency {
+          Decimals
+          CollectionAddress
+          Name
+          Key
+          IsMutable
+          Symbol
+        }
+        PreBalance
+        PostBalance
+      }
+    }
+  }
+}
+
